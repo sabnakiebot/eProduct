@@ -125,8 +125,8 @@ liquibase {
         main {
             driver "org.postgresql.Driver"
             url "jdbc:postgresql://localhost:5432/eProduct"
-            username "eProduct"
-            password ""
+            username "postgres"
+            password "praman1947"
             changeLogFile "src/main/resources/config/liquibase/master.xml"
             defaultSchemaName ""
             logLevel "debug"
@@ -135,8 +135,8 @@ liquibase {
         diffLog {
             driver "org.postgresql.Driver"
             url "jdbc:postgresql://localhost:5432/eProduct"
-            username "eProduct"
-            password ""
+            username "postgres"
+            password "praman1947"
             changeLogFile project.ext.diffChangelogFile
             referenceUrl "hibernate:spring:com.mycompany.myapp.domain?dialect=tech.jhipster.domain.util.FixedPostgreSQL10Dialect&hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy"
             defaultSchemaName ""
